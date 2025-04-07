@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa; /* optional: light background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  

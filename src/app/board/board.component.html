@@ -1,0 +1,17 @@
+<div class="board">
+  <app-square
+    *ngFor="let square of squares; let i = index"
+    [value]="squares[i]"
+    [highlight]="!!winningLine && winningLine.includes(i)"
+    (squareClick)="makeMove(i)">
+  </app-square>
+</div>
+
+
+  
+  <div *ngIf="winner" class="winner-banner">
+    🎉 Winner: {{ winner }}
+  </div>
+  
+  <button (click)="newGame()">Restart</button>
+  
